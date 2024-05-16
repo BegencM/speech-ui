@@ -1,7 +1,8 @@
 const Image = () => {
   return (
-    <div>
-      <h2>Image</h2>
+    <div className="Images">
+      <img src="/images/messi.jpg" />
+      <img src="/images/messi.jpg" />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import "./styles/layout.css";
 
 const MainLayout = () => {
   return (
-    <Layout className="container">
+    <Layout>
       <Navbar />
       <Outlet />
       <Footer />

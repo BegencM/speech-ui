@@ -1,7 +1,7 @@
 const VideoBanner = () => {
   return (
-    <div>
-      <h2>WideoBanner</h2>
+    <div className="VideoBanner">
+      <video src="" poster="/images/messi.jpg" />
     </div>
   );
 };
