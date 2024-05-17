@@ -1,17 +1,31 @@
 import { ConfigProvider } from "antd";
 import Router from "../../page/Router";
+import { darkTheme, lightTheme } from "../../theme/app.theme";
+import React, { createContext, useState } from "react";
 
+type ModeType = "light" | "dark";
+
+interface IContext {
+  mode: ModeType;
+  setMode: React.Dispatch<React.SetStateAction<ModeType>> | undefined;
+}
+export const AppContext = createContext<IContext>({
+  mode: "dark",
+  setMode: undefined,
+});
 const AppProvider = () => {
+  const [mode, setMode] = useState<ModeType>("dark");
   return (
-    <ConfigProvider
-      theme={{
-        token: {
-          colorPrimary: "red",
-        },
+    <AppContext.Provider
+      value={{
+        mode: mode,
+        setMode: setMode,
       }}
     >
-      <Router />
-    </ConfigProvider>
+      <ConfigProvider theme={mode == "dark" ? darkTheme : lightTheme}>
+        <Router />
+      </ConfigProvider>
+    </AppContext.Provider>
   );
 };
 

@@ -6,16 +6,17 @@
   gap: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: rgba(255, 255, 255, 0.503);
+  background-color: rgba(255, 255, 255, 0.099);
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   z-index: 2;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 #app-navbar .logo {
-  width: 40px;
-  border-radius: 40px;
+  width: 100px;
 }
 
 #app-navbar #buttons {

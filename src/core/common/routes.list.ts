@@ -4,17 +4,22 @@ import RouteConstant from "./route.constant";
 export const routes: IRoute[] = [
   {
     route: RouteConstant.Home,
-    title: "Home",
+    title: "Bas sahypa",
   },
   {
     route: RouteConstant.Channel,
-    title: "Channels",
+    title: "Kannalar",
   },
-   {
-    route: RouteConstant.Channel1,
-    title: "Channels1",
-  }, {
-    route: RouteConstant.Channel2,
-    title: "Channels2",
-  }
+  {
+    route: RouteConstant.OnlinePayment,
+    title: "Onlayn toleg",
+  },
+  {
+    route: RouteConstant.TvSputnik,
+    title: "Hemra Teleyaylymlary",
+  },
+  {
+    route: RouteConstant.IpTv,
+    title: "IPTV",
+  },
 ];
