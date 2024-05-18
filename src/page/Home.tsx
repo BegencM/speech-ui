@@ -5,6 +5,7 @@ import "./homeCss/styles.css";
 import Channel from "./Channel";
 import Services from "./Services";
 import Movies from "./Movies";
+import Tv from "./Tv";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Channel />
       <Services />
       <Movies />
+      <Tv></Tv>
     </Space>
   );
 };

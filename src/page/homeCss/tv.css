@@ -1,0 +1,14 @@
+#tv_row{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#tv-image{
+width: 100%;
+}
+#tv_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
