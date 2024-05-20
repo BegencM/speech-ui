@@ -6,6 +6,7 @@ import Channel from "./Channel";
 import Services from "./Services";
 import Movies from "./Movies";
 import Tv from "./Tv";
+import News from "./News";
 
 const Home = () => {
   return (
@@ -21,7 +22,8 @@ const Home = () => {
       <Channel />
       <Services />
       <Movies />
-      <Tv></Tv>
+      <Tv />
+      <News />
     </Space>
   );
 };
